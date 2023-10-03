@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Document</title>
+  <style>
+    #summary {
+      background-color: #f6f6f6;
+    }
+  </style>
+</head>
+
+<body >
+<div class="flex justify-center gap-7">
+  <h1 class="text-xl my-5 font-bold" >Cart</h1>
+  <a href="/" class="text-xl my-5 hover:text-blue-700 hover:cursor-pointer text-gray-400" >Home</a>
+</div>
+  <div class="bg-gray-100 flex justify-center">
+  <div class="w-full p-4 sm:px-11  md:w-fit">
+  <div class="mt-8">
+    <div class="flow-root">
+      <ul id="list" role="list" class="-my-6 divide-y divide-gray-200">
+        
+
+        <!-- More products... -->
+      </ul>
+    </div>
+  </div>
+  <div>
+    <h1 class="text-lg font-semibold text-right mt-8">Total Cost</h1>
+    <h2 id="total-cost" class="text-right"></h2>
+  </div>
+</div>
+</div>
+<script src="../js/cart.js"></script>
+</body>
+</html>
+

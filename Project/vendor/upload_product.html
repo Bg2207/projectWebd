@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body background="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80">
+
+    <div class="d-flex justify-content-center align-items-center">
+
+    <form action="upload_product.php" method="post" enctype="multipart/form-data" class="w-50 bg-warning p-5">
+
+         <h3 class="text-center">Upload Product</h3>
+
+        <input class="form-control mt-2" type="text" placeholder="Product Name" name="name">
+        <input class="form-control mt-2" type="text" placeholder="Product Price" name="price">
+
+        <textarea class="form-control mt-2"  id="" cols="20" rows="5" placeholder="Product Details" name="details"></textarea>
+
+        <input class="form-control mt-2" type="text" placeholder="Product Code" name="code">
+
+        <label class="text-success ms-2 mt-2" >Category</label>
+
+        <select class="form-control "  id="category" name="category">
+            <option>DSA</option>
+            <option>WEB DEVketch</option>
+            <option>AI&ML</option>
+        </select>
+
+        <label class="text-success  ms-2 mt-2" >Active</label>
+
+        <select class="form-control mt-2"  id="active" name="active">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <input type="file" class="form-control mt-2" accept=".jpg,.png" name="pdt_img">
+
+        <div class="text-center mt-3">
+            <button class="btn btn-success">Upload</button>
+        </div>
+    
+
+    </form>
+    </div>
+    
+</body>
+</html>

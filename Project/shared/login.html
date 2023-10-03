@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- background="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" -->
+    <div class="flex h-screen w-screen justify-center items-center">
+      <form
+        action="login.php"
+        method="post"
+        class="card gap-5 border p-4 bg-gray-100 shadow-lg"
+      >
+        <h3 class="text-lg text-center">Login Page</h3>
+        <input
+          name="uname"
+          required
+          class="input input-bordered"
+          type="text"
+          placeholder="Enter username"
+        />
+        <input
+          name="upass"
+          required
+          class="input input-bordered"
+          type="password"
+          placeholder="Enter Password"
+        />
+
+        <div class="text-center">
+          <button class="btn btn-primary w-full">Login</button>
+        </div>
+        <a class="text-center text-blue-600" href="signup.html"
+          >Create a new account</a
+        >
+      </form>
+      <div class=""></div>
+    </div>
+  </body>
+</html>
